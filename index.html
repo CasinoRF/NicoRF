@@ -6,22 +6,23 @@
     <title>CASINO RED FORTUNA</title>
 
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '900102288454294');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '900102288454294');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         /* Estilos generales y responsive */
         body {
@@ -30,9 +31,9 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
             margin: 0;
             padding: 0;
             background-image: url('fondo.jpg'); /* Reemplaza fondo.jpg con la ruta de tu imagen */
-            background-size: contain; /* Mantiene las proporciones de la imagen */
+            background-size: contain;
             background-repeat: no-repeat;
-            background-position: center center; /* Centra la imagen */
+            background-position: center center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,7 +46,7 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
             margin: 0 auto;
             text-align: center;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejor legibilidad */
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 20px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         }
@@ -53,7 +54,7 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
         .titulo {
             font-size: 48px;
             font-weight: bold;
-            color: #FF5722; /* Color vibrante */
+            color: #FF5722;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
@@ -65,7 +66,7 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
         }
 
         .boton-usuario {
-            background-color: #FF0000; /* Color rojo */
+            background-color: #FF0000;
             color: #fff;
             padding: 15px 30px;
             border: none;
@@ -74,8 +75,9 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
             font-weight: bold;
             text-decoration: none;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-            animation: mover 1s infinite alternate; /* Animación de movimiento */
+            animation: mover 1s infinite alternate;
             display: inline-block;
+            margin: 10px; /* Separación entre botones */
         }
 
         /* Animación para el botón */
@@ -87,8 +89,8 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
         /* Ajustes para pantallas más pequeñas */
         @media (max-width: 768px) {
             body {
-                background-size: cover; /* Llena la pantalla en móviles */
-                background-position: center top; /* Centra mejor en móviles */
+                background-size: cover;
+                background-position: center top;
             }
 
             .titulo {
@@ -110,7 +112,11 @@ src="https://www.facebook.com/tr?id=900102288454294&ev=PageView&noscript=1"
     <div class="contenedor">
         <h1 class="titulo">RED FORTUNA</h1>
         <p class="texto">Solicita tu usuario gratuito. ¡Aprovecha todas las promociones disponibles!</p>
+
+        <!-- Botones con eventos personalizados -->
         <a href="https://wa.link/m4wvgs" class="boton-usuario" onclick="fbq('track', 'Lead');">QUIERO UN USUARIO</a>
+        <a href="https://example.com/compra" class="boton-usuario" onclick="fbq('track', 'Purchase', {currency: 'USD', value: 142.52});">REALIZAR COMPRA</a>
+        <a href="https://example.com/contacto" class="boton-usuario" onclick="fbq('track', 'Contact');">CONTACTAR</a>
     </div>
 </body>
 </html>
